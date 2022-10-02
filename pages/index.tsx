@@ -1,10 +1,12 @@
-import Layout from '../components/Layout'
+import {MainLayout} from "../layouts";
+import styles from "./index.module.css"
+import Twitter from '../assets/icons/twitter.svg'
 
-const IndexPage = () => (
-  <Layout title="Serhii Peresunko">
-    <h1>Hello, I am Serhii! 👋</h1>
-  </Layout>
+const HomePage = () => (
+  <MainLayout title="Serhii Peresunko" className={styles.app}>
+    <h1>Follow me on <a href="https://bit.ly/3Sy2qFa" className={styles.link}><Twitter/></a></h1>
+  </MainLayout>
 )
 
-export default IndexPage
+export default HomePage
  
